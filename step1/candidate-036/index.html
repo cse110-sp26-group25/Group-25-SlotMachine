@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TokenSlots — The AI Casino</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <div class="machine-wrapper">
+    <header>
+      <h1 class="title">TOKEN<span>SLOTS</span></h1>
+      <p class="subtitle">Where your prompts go to die</p>
+    </header>
+
+    <div class="token-display">
+      <div class="token-count">
+        <span class="token-icon">🪙</span>
+        <span id="token-count">100</span>
+        <span class="token-label">tokens</span>
+      </div>
+      <div class="bet-control">
+        <button class="bet-btn" id="bet-down">−</button>
+        <span class="bet-label">BET: <span id="bet-amount">10</span></span>
+        <button class="bet-btn" id="bet-up">+</button>
+      </div>
+    </div>
+
+    <div class="machine">
+      <div class="machine-top">
+        <div class="light-row">
+          <span class="bulb" id="b0"></span>
+          <span class="bulb" id="b1"></span>
+          <span class="bulb" id="b2"></span>
+          <span class="bulb" id="b3"></span>
+          <span class="bulb" id="b4"></span>
+          <span class="bulb" id="b5"></span>
+          <span class="bulb" id="b6"></span>
+        </div>
+      </div>
+
+      <div class="reels-frame">
+        <div class="reel-shadow top-shadow"></div>
+        <div class="reels">
+          <div class="reel-container">
+            <div class="reel" id="reel-0"></div>
+          </div>
+          <div class="reel-divider"></div>
+          <div class="reel-container">
+            <div class="reel" id="reel-1"></div>
+          </div>
+          <div class="reel-divider"></div>
+          <div class="reel-container">
+            <div class="reel" id="reel-2"></div>
+          </div>
+        </div>
+        <div class="payline"></div>
+        <div class="reel-shadow bottom-shadow"></div>
+      </div>
+    </div>
+
+    <div class="message-box">
+      <p id="message">Insert tokens. Pray to your GPU overlords.</p>
+    </div>
+
+    <div class="controls">
+      <button class="spin-btn" id="spin-btn">
+        <span class="spin-text">SPIN</span>
+        <span class="spin-sub">consume tokens</span>
+      </button>
+    </div>
+
+    <div class="paytable">
+      <h3>PAYTABLE</h3>
+      <div class="pay-rows">
+        <div class="pay-row jackpot">🪙🪙🪙 <span>JACKPOT — 20× tokens</span></div>
+        <div class="pay-row">🤖🤖🤖 <span>AI OVERLORDS — 10× tokens</span></div>
+        <div class="pay-row">🧠🧠🧠 <span>BIG BRAIN — 8× tokens</span></div>
+        <div class="pay-row">⚡⚡⚡ <span>GPU MELTDOWN — 6× tokens</span></div>
+        <div class="pay-row">🔥🔥🔥 <span>TRAINING RUN — 5× tokens</span></div>
+        <div class="pay-row">💀💀💀 <span>HALLUCINATION — 3× tokens</span></div>
+        <div class="pay-row small">Any two matching <span>2× tokens</span></div>
+        <div class="pay-row small red">💸 No match <span>lose your bet</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="result-overlay" id="result-overlay">
+    <div class="result-card" id="result-card">
+      <div class="result-emoji" id="result-emoji"></div>
+      <div class="result-title" id="result-title"></div>
+      <div class="result-msg" id="result-msg"></div>
+      <div class="result-tokens" id="result-tokens"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOKEN SLOTS — The AI Casino</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <main class="machine">
+    <header class="marquee">
+      <div class="marquee-track">
+        <span>★ TOKEN SLOTS ★ &nbsp; WARNING: May cause hallucinations &nbsp; ★ NOT RESPONSIBLE FOR MODEL DEPRECATION &nbsp; ★ CONTEXT WINDOW WINS PAY 10x &nbsp; ★ TOKEN SLOTS ★ &nbsp; WARNING: May cause hallucinations &nbsp; ★ NOT RESPONSIBLE FOR MODEL DEPRECATION &nbsp;</span>
+      </div>
+    </header>
+
+    <h1 class="title">TOKEN SLOTS</h1>
+    <p class="subtitle">The House Always Has More Parameters</p>
+
+    <div class="token-display">
+      <span class="token-label">YOUR TOKENS</span>
+      <span id="token-count" class="token-value">100</span>
+      <span class="token-unit">tk</span>
+    </div>
+
+    <div class="reels-container">
+      <div class="reel-window">
+        <div class="reel" id="reel-0">
+          <div class="symbol">🤖</div>
+        </div>
+        <div class="reel-shine"></div>
+      </div>
+      <div class="reel-window">
+        <div class="reel" id="reel-1">
+          <div class="symbol">🤖</div>
+        </div>
+        <div class="reel-shine"></div>
+      </div>
+      <div class="reel-window">
+        <div class="reel" id="reel-2">
+          <div class="symbol">🤖</div>
+        </div>
+        <div class="reel-shine"></div>
+      </div>
+      <div class="payline"></div>
+    </div>
+
+    <div id="result-banner" class="result-banner hidden">
+      <span id="result-text"></span>
+    </div>
+
+    <div id="message-box" class="message-box">
+      <span id="message-text">Insert tokens to begin inference...</span>
+    </div>
+
+    <div class="controls">
+      <div class="bet-control">
+        <button class="btn-small" id="bet-down">−</button>
+        <span class="bet-label">BET</span>
+        <span id="bet-amount" class="bet-value">10</span>
+        <span class="bet-unit">tk</span>
+        <button class="btn-small" id="bet-up">+</button>
+      </div>
+      <button class="btn-spin" id="spin-btn">
+        <span class="btn-spin-text">SPIN</span>
+        <span class="btn-spin-sub">( send request )</span>
+      </button>
+      <button class="btn-small btn-max" id="max-bet">MAX BET</button>
+    </div>
+
+    <div class="paytable">
+      <div class="paytable-title">— PAY TABLE —</div>
+      <div class="pay-row jackpot"><span>💀💀💀</span><span>MODEL DEPRECATED JACKPOT · 500x</span></div>
+      <div class="pay-row"><span>🧠🧠🧠</span><span>GENERAL INTELLIGENCE · 100x</span></div>
+      <div class="pay-row"><span>⚡⚡⚡</span><span>GPU CLUSTER · 50x</span></div>
+      <div class="pay-row"><span>💬💬💬</span><span>PROMPT OVERFLOW · 25x</span></div>
+      <div class="pay-row"><span>🤖🤖🤖</span><span>ROBOT UPRISING · 15x</span></div>
+      <div class="pay-row"><span>🔥🔥🔥</span><span>MASS HALLUCINATION · 10x</span></div>
+      <div class="pay-row dim"><span>ANY TWO MATCH</span><span>CONTEXT RECALL · 2x</span></div>
+      <div class="pay-row danger"><span>💸💸💸</span><span>RATE LIMITED · LOSE 3x BET</span></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
